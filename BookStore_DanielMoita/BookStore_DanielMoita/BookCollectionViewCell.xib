@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellIdentifier" id="gTV-IL-0wX" customClass="BookCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="125" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="125" height="180"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TU4-33-x5f">
+                        <rect key="frame" x="0.0" y="0.0" width="125" height="180"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <color key="backgroundColor" systemColor="systemGreenColor"/>
+            <constraints>
+                <constraint firstItem="TU4-33-x5f" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="PLU-bi-X1u"/>
+                <constraint firstAttribute="bottom" secondItem="TU4-33-x5f" secondAttribute="bottom" id="Vif-Gj-sxG"/>
+                <constraint firstItem="TU4-33-x5f" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ehI-jI-TdX"/>
+                <constraint firstAttribute="trailing" secondItem="TU4-33-x5f" secondAttribute="trailing" id="wVK-ge-GiA"/>
+            </constraints>
+            <size key="customSize" width="125" height="180"/>
+            <connections>
+                <outlet property="imageThumbnail" destination="TU4-33-x5f" id="NzD-ts-Xbu"/>
+            </connections>
+            <point key="canvasLocation" x="-0.7246376811594204" y="135.9375"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
